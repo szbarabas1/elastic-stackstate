@@ -6,7 +6,7 @@ RUN apt-get -y install python3
 RUN chmod 777 /var/run
 RUN mkdir /scripts
 RUN chmod 777 /scripts
-RUN chmod 755 /usr/sbin/cron
+RUN chmod 4755 /usr/sbin/cron
 
 COPY elastic-cron /etc/cron.d/elastic-cron
 COPY changefields.py /scripts
