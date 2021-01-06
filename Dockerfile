@@ -3,6 +3,7 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get -y install cron
 RUN apt-get -y install python3
 
+RUN chmod 777 /var/run
 RUN mkdir /scripts
 RUN chmod 777 /scripts
 COPY elastic-cron /etc/cron.d/elastic-cron
