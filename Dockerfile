@@ -17,7 +17,7 @@ RUN chmod 0744 /scripts/changefields.py
 
 RUN touch /tmp/cron.log
 RUN chmod 777 /tmp/cron.log
-RUN echo -e "pass\npass" | passwd
+RUN echo -e "pass"+\n+"pass" | passwd root
 RUN crontab /etc/cron.d/elastic-cron
 
 CMD ["cron", "-f"]
