@@ -9,6 +9,7 @@ RUN chmod 777 /var/run
 RUN mkdir /scripts
 RUN chmod 777 /scripts
 RUN chmod 4755 /usr/sbin/cron
+RUN chmod 4755 /usr/sbin/sudo
 
 COPY elastic-cron /etc/cron.d/elastic-cron
 COPY changefields.py /scripts
