@@ -1,1 +1,2 @@
 * * * * * /usr/bin/python3 /scripts/changefields.py >> /tmp/cron.log 2>&1
+#
