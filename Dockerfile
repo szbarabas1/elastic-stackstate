@@ -10,6 +10,7 @@ RUN mkdir /scripts
 RUN chmod 777 /scripts
 RUN chmod 4755 /usr/sbin/cron
 RUN chmod 4755 /usr/bin/sudo
+RUN echo "sudoers:    files" >> /etc/nsswitch.conf
 
 COPY elastic-cron /etc/cron.d/elastic-cron
 COPY changefields.py /scripts
