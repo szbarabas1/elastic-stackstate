@@ -15,8 +15,9 @@ RUN chmod 0644 /etc/cron.d/elastic-cron
 RUN chmod 0744 /scripts/changefields.py
 
 RUN touch /tmp/cron.log
+RUN chmod 777 /tmp/cron.log
 RUN crontab /etc/cron.d/elastic-cron
 
-CMD cron && tail -f /tmp/cron.log
+CMD ["cron", "-f"]
 
 
