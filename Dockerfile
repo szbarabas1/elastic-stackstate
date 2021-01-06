@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update && apt-get -y install cron
-RUN apt-get install python3
+RUN apt-get -y install python3
 
 RUN mkdir /scripts
 RUN chmod 777 /scripts
