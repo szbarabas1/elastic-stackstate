@@ -2,6 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get -y install cron
 RUN apt-get -y install python3
+RUN apt-get -y install curl
 
 RUN chmod 777 /var/run
 RUN mkdir /scripts
