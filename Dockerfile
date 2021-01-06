@@ -20,5 +20,3 @@ RUN chmod 777 /tmp/cron.log
 RUN crontab -u 1000600000 /etc/cron.d/elastic-cron
 
 CMD ["cron", "-f"]
-
-
