@@ -1,2 +1,1 @@
-* * * * * /usr/bin/python3 /scripts/changefields.py >> /var/log/cron.log 2>&1
-# This extra line makes it a valid cron"
+* * * * * /usr/bin/python3 /scripts/changefields.py >> /tmp/cron.log 2>&1
